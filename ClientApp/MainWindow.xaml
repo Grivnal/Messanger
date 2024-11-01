@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="515" Width="600" Foreground="#FF3AA6C0" FontWeight="Bold">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF040B0B" Offset="1"/>
+            <GradientStop Color="#FF48B1AA" Offset="0"/>
+            <GradientStop Color="#FF217D7D" Offset="0.333"/>
+            <GradientStop Color="#FF081514" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <!--<TextBlock FontSize="+28" Margin="264,71,257,65" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" >
+        <TextBlock.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.099"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </TextBlock.RenderTransform>. Registration Form .</TextBlock>-->
+    <ListBox Width="300"  Background="White" BorderBrush="#FF0B1A48" Foreground="#FF3AD6E2" Margin="26">
+        <TextBlock FontSize="+28" Margin="7" Foreground="#FF2ABDC8" Width="269">. Registration Form .</TextBlock>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Name</TextBox>
+        <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Email address</TextBox>
+        <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Counrty</TextBox>
+        <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Phone</TextBox>
+        <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Password</TextBox>
+        <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
+        <Button Background="#FF3AD6E2" Width="235" Margin="7" Height="25" Foreground="White">CREATE ACCOUNT</Button>
+    </ListBox>
 </Window>
