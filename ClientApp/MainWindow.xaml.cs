@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,6 +27,8 @@ namespace ClientApp{
             //Console.WriteLine(message1.Data);
 
             //Messaging message1 = new Messaging(1, "Alice", "Hello there!", DateTime.Now, "Text Message");
+            //Console.WriteLine(user1.Name);
+            //Console.WriteLine(user1.Email);
         }
     }
 }
@@ -50,4 +53,22 @@ namespace ClientApp{
             Data = data;
         }
     }
-  
+
+public class User
+{
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Country { get; set; }
+    public string Phone { get; set; }
+    public string Passport { get; set; }
+
+    public User(string name, string email, string country, string phone, string passport)
+    {
+        Name = name;
+        Email = email;
+        Country = country;
+        Phone = phone;
+        Passport = passport;
+    }
+}
+
