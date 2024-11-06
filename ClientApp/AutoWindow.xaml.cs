@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ClientApp
 {
     /// <summary>
-    /// Interaction logic for AuthenticationWindow.xaml
+    /// Interaction logic for AutoWindow.xaml
     /// </summary>
-    public partial class AuthenticationWindow : Window
+    public partial class AutoWindow : Window
     {
-        public AuthenticationWindow()
+        public AutoWindow()
         {
             InitializeComponent();
         }
