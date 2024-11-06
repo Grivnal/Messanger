@@ -31,6 +31,11 @@ namespace ClientApp
             //Console.WriteLine(user1.Name);
             //Console.WriteLine(user1.Email);
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 
 

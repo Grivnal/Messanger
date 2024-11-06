@@ -25,7 +25,7 @@
         </TextBlock.RenderTransform>. Registration Form .</TextBlock>-->
     <ListBox Width="300"  Background="White" BorderBrush="#FF0B1A48" Foreground="#FF3AD6E2" Margin="26">
         <TextBlock FontSize="+28" Margin="7" Foreground="#FF2ABDC8" Width="269">. Registration Form .</TextBlock>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Name</TextBox>
+        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235" TextChanged="TextBox_TextChanged">. Name</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
         <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Email address</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
