@@ -122,5 +122,38 @@ namespace ClientApp
             Passport = passport;
         }
     }
+    public class ContactList
+    {
+        private List<User> users = new List<User>();
+
+        public void AddUser(User user)
+        {
+            users.Add(user);
+        }
+
+        public void RemoveUser(User user)
+        {
+            users.Remove(user);
+        }
+
+        public User FindUserByName(string name)
+        {
+            return users.Find(u => u.Name == name);
+        }
+
+        public User FindUserByEmail(string email)
+        {
+            return users.Find(u => u.Email == email);
+        }
+
+        public void PrintAllUsers()
+        {
+            foreach (User user in users)
+            {
+                Console.WriteLine($"Name: {user.Name}, Email: {user.Email}, Country: {user.Country}, Phone: {user.Phone}, Passport: {user.Passport}");
+            }
+        }
+    }
+
 }
 
