@@ -25,16 +25,16 @@
         </TextBlock.RenderTransform>. Registration Form .</TextBlock>-->
     <ListBox Width="300"  Background="White" BorderBrush="#FF0B1A48" Foreground="#FF3AD6E2" Margin="26">
         <TextBlock FontSize="+28" Margin="7" Foreground="#FF2ABDC8" Width="269">. Registration Form .</TextBlock>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235" TextChanged="TextBox_TextChanged">. Name</TextBox>
+        <TextBox Name="NameTb"  FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235" TextChanged="TextBox_TextChanged">. Name</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Email address</TextBox>
+        <TextBox Name="EmailTb" FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Email address</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Counrty</TextBox>
+        <TextBox Name="CounrtyTb" FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Counrty</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Phone</TextBox>
+        <TextBox Name="PhoneTb" FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Phone</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
-        <TextBox FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Password</TextBox>
+        <TextBox Name="PasswordTb" FontSize="+16" Margin="10" Foreground="#FF8CA4A5" Width="235">. Password</TextBox>
         <Button Background="#FF3AD6E2" Width="250" Margin="5" Height="2" ></Button>
-        <Button Background="#FF3AD6E2" Width="235" Margin="7" Height="25" Foreground="White">CREATE ACCOUNT</Button>
+        <Button Background="#FF3AD6E2" Width="235" Margin="7" Height="25" Foreground="White" Click="Button_Click">CREATE ACCOUNT</Button>
     </ListBox>
 </Window>

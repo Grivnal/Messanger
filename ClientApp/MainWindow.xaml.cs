@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,112 +34,10 @@ namespace ClientApp
         {
 
         }
-    }
 
-
-
-
-
-    public class Messaging
-    {
-        public int Id { get; set; }
-        public string User { get; set; }
-        public string Text { get; set; }
-        public DateTime Time { get; set; }
-        public string Data { get; set; }
-
-        public Messaging(int id, string user, string text, DateTime time, string data = null)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Id = id;
-            User = user;
-            Text = text;
-            Time = time;
-            Data = data;
-        }
-    }
-
-    //public class User
-    //{
-    //    public string Name { get; set; }
-    //    public string Email { get; set; }
-    //    public string Country { get; set; }
-    //    public string Phone { get; set; }
-    //    public string Passport { get; set; }
-
-    //    public User(string name, string email, string country, string phone, string passport)
-    //    {
-    //        Name = name;
-    //        Email = email;
-    //        Country = country;
-    //        Phone = phone;
-    //        Passport = passport;
-    //    }
-    //}
-    public class GroupChat
-    {
-        public int Id { get; set; }
-        public List<User> Users { get; set; } = new List<User>();
-        public DateTime Time { get; set; }
-        public string Data { get; set; }
-        public User Admin { get; set; }
-        public string Text { get; set; }
-        public GroupChat(int id, User admin, string text, DateTime time, string data = null)
-        {
-            Id = id;
-            Admin = admin;
-            Text = text;
-            Time = time;
-            Data = data;
-        }
-        public void AddUser(User user)
-        {
-            Users.Add(user);
-        }
-        public void RemoveUser(User user)
-        {
-            Users.Remove(user);
-        }
-        public void UpdateText(string newText)
-        {
-            Text = newText;
-        }
-    }
-    public class User
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Country { get; set; }
-        public string Phone { get; set; }
-        public string Passport { get; set; }
-        public User(string name, string email, string country, string phone, string passport)
-        {
-            Name = name;
-            Email = email;
-            Country = country;
-            Phone = phone;
-            Passport = passport;
-        }
-    }
-    public class ContactList1
-    {
-        private List<User> users = new List<User>();
-
-        public void AddUser(User user)
-        {
-            users.Add(user);
-        }
-
-        public void RemoveUser(User user)
-        {
-            users.Remove(user);
-        }
-
-        public void PrintAllUsers()
-        {
-            foreach (User user in users)
-            {
-                Console.WriteLine($"Name: {user.Name}, Email: {user.Email}, Country: {user.Country}, Phone: {user.Phone}, Passport: {user.Passport}");
-            }
+            User user = new User(NameTb.Text,EmailTb.Text,CounrtyTb.Text,PhoneTb.Text,PasswordTb.Text);
         }
     }
 }
