@@ -122,7 +122,7 @@ namespace ClientApp
             Passport = passport;
         }
     }
-    public class ContactList
+    public class ContactList1
     {
         private List<User> users = new List<User>();
 
