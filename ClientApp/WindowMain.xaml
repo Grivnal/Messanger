@@ -14,5 +14,4 @@
     <!--<ListBox DisplayMemberPath=""  Background="#C1121F">
         <TextBox Width="200" Margin="12" Height="30" Background="#FDF0D5">SEARCH</TextBox>
     </ListBox>-->
-    <TextBox Width="200" Margin="12" Height="30" Background="#FDF0D5">SEARCH</TextBox>
 </Window>
