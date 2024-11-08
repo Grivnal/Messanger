@@ -136,16 +136,6 @@ namespace ClientApp
             users.Remove(user);
         }
 
-        public User FindUserByName(string name)
-        {
-            return users.Find(u => u.Name == name);
-        }
-
-        public User FindUserByEmail(string email)
-        {
-            return users.Find(u => u.Email == email);
-        }
-
         public void PrintAllUsers()
         {
             foreach (User user in users)
