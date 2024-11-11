@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,21 @@ namespace ClientApp
     /// </summary>
     public partial class AutoWindow : Window
     {
+        MessangerDBContext DBContext;
         public AutoWindow()
         {
             InitializeComponent();
+            DBContext= new MessangerDBContext();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            User user = new User(NameTb.Text, EmailTb.Text, CounrtyTb.Text, PhoneTb.Text, PasswordTb.Text);
+            if(DBContext.Users.Where(U=>U.Name==user.Name) !=null)
+            {
+            
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using DataAccess;
+using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,10 +17,11 @@ namespace ClientApp
 {
     public partial class MainWindow : Window
     {
+        MessangerDBContext dbContext;
         public MainWindow()
         {
             InitializeComponent();
-
+            dbContext= new MessangerDBContext();
             //Console.WriteLine(message1.User);
             //Console.WriteLine(message1.Text);
             //Console.WriteLine(message1.Time);
@@ -38,6 +40,8 @@ namespace ClientApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             User user = new User(NameTb.Text,EmailTb.Text,CounrtyTb.Text,PhoneTb.Text,PasswordTb.Text);
+            dbContext.Add(user);
+            dbContext.SaveChanges();
         }
     }
 }
