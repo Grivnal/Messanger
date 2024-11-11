@@ -9,8 +9,8 @@
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF040B0B" Offset="1"/>
-            <GradientStop Color="#FF48B1AA" Offset="0"/>
-            <GradientStop Color="#FF217D7D" Offset="0.333"/>
+            <GradientStop Color="#F28482" Offset="0"/>
+            <GradientStop Color="#932523" Offset="0.333"/>
             <GradientStop Color="#FF081514" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
@@ -24,7 +24,7 @@
             </TransformGroup>
         </TextBlock.RenderTransform>. Registration Form .</TextBlock>-->
     <ListBox Width="320"  Background="White" BorderBrush="#FF0B1A48" Foreground="#FF3AD6E2" Margin="26">
-        <TextBlock FontSize="+28" Margin="7" Foreground="#FF2ABDC8" Width="300">. Authentication Form .</TextBlock>
+        <TextBlock FontSize="+28" Margin="7" Foreground="#932523" Width="300">. Authentication Form .</TextBlock>
         <TextBox Name="NameTb" FontSize="+16" Margin="11" Foreground="#FF8CA4A5" Width="300">. Name</TextBox>
         <Button Background="#FF3AD6E2" Width="300" Margin="8" Height="2" ></Button>
         <TextBox Name="EmailTb" FontSize="+16" Margin="11" Foreground="#FF8CA4A5" Width="300">. Email address</TextBox>
@@ -35,6 +35,6 @@
         <Button Background="#FF3AD6E2" Width="300" Margin="8" Height="2" ></Button>
         <TextBox Name="PasswordTb" FontSize="+16" Margin="11" Foreground="#FF8CA4A5" Width="300">. Password</TextBox>
         <Button Background="#FF3AD6E2" Width="300" Margin="8" Height="2" ></Button>
-        <Button Background="#FF3AD6E2" Width="300" Margin="7" Height="25" Foreground="White" Click="Button_Click">CREATE ACCOUNT</Button>
+        <Button Background="#932523" Width="300" Margin="7" Height="25" Foreground="White" Click="Button_Click">CREATE ACCOUNT</Button>
     </ListBox>
 </Window>

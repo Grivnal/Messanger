@@ -1,0 +1,17 @@
+﻿<Window x:Class="ClientApp.www"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientApp"
+        mc:Ignorable="d"
+        Title="www" Height="450" Width="800">
+    <Grid Background="#FF758F">
+        <Button Margin="127,127,0,217" Width="251" HorizontalAlignment="Left" Click="Button_Click" RenderTransformOrigin="0.269,0.439" Background="#FFF0F3"  >
+            𝗟𝗼𝗴 𝗶𝗻 
+        </Button>
+        <Button Margin="0,127,120,217" Width="264" HorizontalAlignment="Right" Click="Button_Click_1" Background="#FFF0F3">
+            𝗦𝗶𝗴𝗻 𝗶𝗻
+        </Button>
+    </Grid>
+</Window>
