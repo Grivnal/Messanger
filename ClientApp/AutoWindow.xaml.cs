@@ -21,20 +21,29 @@ namespace ClientApp
     public partial class AutoWindow : Window
     {
         MessangerDBContext DBContext;
+        MyUser user;
+        MyUser userlogin;
         public AutoWindow()
         {
             InitializeComponent();
             DBContext= new MessangerDBContext();
+            user = new MyUser("seal", "emial", "ukrain", "85498545", "passwor");
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(NameTb.Text, EmailTb.Text, CounrtyTb.Text, PhoneTb.Text, PasswordTb.Text);
-            if(DBContext.Users.Where(U=>U.Name==user.Name) !=null)
+            userlogin = new MyUser(NameTb.Text, EmailTb.Text, CounrtyTb.Text, PhoneTb.Text, PasswordTb.Text);
+            if (userlogin.Name==user.Name)
             {
-            
+                WindowMain mainW= new WindowMain();  
+                mainW.Show();
+                this.Hide();
             }
+            //if(DBContext.Users.Where(U=>U.Name==user.Name) !=null)
+            //{
+            
+            //}
         }
     }
 }

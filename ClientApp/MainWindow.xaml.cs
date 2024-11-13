@@ -39,7 +39,7 @@ namespace ClientApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            User user = new User(NameTb.Text,EmailTb.Text,CounrtyTb.Text,PhoneTb.Text,PasswordTb.Text);
+            MyUser user = new MyUser(NameTb.Text,EmailTb.Text,CounrtyTb.Text,PhoneTb.Text,PasswordTb.Text);
             dbContext.Add(user);
             dbContext.SaveChanges();
         }

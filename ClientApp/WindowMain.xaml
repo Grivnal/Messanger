@@ -12,14 +12,14 @@
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Background="#932523">
-            <TextBox Margin="10" Width="200" Height="80" Background="#FDDDD8">𝙀𝙣𝙩𝙚𝙧 𝙔𝙤𝙪𝙧 𝙈𝙚𝙨𝙨𝙖𝙜𝙚...
+            <TextBox Margin="10" Width="200" Height="80" Background="#FDDDD8" Name="msgText" >𝙀𝙣𝙩𝙚𝙧 𝙔𝙤𝙪𝙧 𝙈𝙚𝙨𝙨𝙖𝙜𝙚...
             </TextBox>
-            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C">𝙎𝙚𝙣𝙙 𝙈𝙚𝙨𝙨𝙖𝙜𝙚</Button>
-            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C">𝙅𝙤𝙞𝙣 𝙞𝙣𝙩𝙤 𝙂𝙧𝙤𝙪𝙥</Button>
-            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C">𝙇𝙚𝙖𝙫𝙚 𝙛𝙧𝙤𝙢 𝙂𝙧𝙤𝙪𝙥</Button>
+            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C" Click="Button_Click">𝙎𝙚𝙣𝙙 𝙈𝙚𝙨𝙨𝙖𝙜𝙚</Button>
+            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C" Click="Button_Click_1">𝙅𝙤𝙞𝙣 𝙞𝙣𝙩𝙤 𝙂𝙧𝙤𝙪𝙥</Button>
+            <Button Margin="10" Width="150" Height="25" Background="#EC9E9C" Click="Button_Click_2">𝙇𝙚𝙖𝙫𝙚 𝙛𝙧𝙤𝙢 𝙂𝙧𝙤𝙪𝙥</Button>
             <Image> </Image>
         </StackPanel>
-        <ListBox Grid.Column="1" Background="#F28482">
+        <ListBox Grid.Column="1" Background="#F28482" ItemsSource="{Binding}">
             
         </ListBox>
         
