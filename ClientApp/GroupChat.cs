@@ -23,12 +23,12 @@ namespace ClientApp
     public class GroupChat
     {
         public int Id { get; set; }
-        public List<User> Users { get; set; } = new List<User>();
+        public List<MyUser> Users { get; set; } = new List<MyUser>();
         public DateTime Time { get; set; }
         public string Data { get; set; }
-        public User Admin { get; set; }
+        public MyUser Admin { get; set; }
         public string Text { get; set; }
-        public GroupChat(int id, User admin, string text, DateTime time, string data = null)
+        public GroupChat(int id, MyUser admin, string text, DateTime time, string data = null)
         {
             Id = id;
             Admin = admin;
@@ -36,11 +36,11 @@ namespace ClientApp
             Time = time;
             Data = data;
         }
-        public void AddUser(User user)
+        public void AddUser(MyUser user)
         {
             Users.Add(user);
         }
-        public void RemoveUser(User user)
+        public void RemoveUser(MyUser user)
         {
             Users.Remove(user);
         }

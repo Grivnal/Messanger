@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ClientApp
 {
@@ -10,13 +11,16 @@ namespace ClientApp
         public DateTime Time { get; set; }
         public string Data { get; set; }
 
-        public Messaging(int id, string user, string text, DateTime time, string data = null)
+        public Messaging(  string text, DateTime time, string data = null)
         {
-            Id = id;
-            User = user;
+          
             Text = text;
             Time = time;
             Data = data;
+        }
+        public override string ToString()
+        {
+            return $"{Text} . Date : {Data}";
         }
     }
 }
